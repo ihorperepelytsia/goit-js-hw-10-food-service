@@ -1,3 +1,4 @@
+{{#each this}}
 <li class="menu__item">
     <img src="{{this.image}}" alt="{{this.name}}" class="card__image" />
     <div class="card">
@@ -8,7 +9,6 @@
                     monetization_on
                 </i>
                 {{this.price}}
-
 
             <p class="card__descr">{{this.description}}</p>
 
@@ -27,3 +27,4 @@
         </button>
     </div>
 </li>
+{{/each}}

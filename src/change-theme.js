@@ -23,6 +23,7 @@ function changeValueInput() {
   if (localStorage.getItem('Theme') === Theme.LIGHT) {
     document.body.classList.remove(Theme.DARK);
     document.body.classList.add(Theme.LIGHT);
+    return;
   }
 
   if (localStorage.getItem('Theme') === Theme.DARK) {
@@ -35,5 +36,6 @@ function changeTheme() {
   if (localStorage.getItem('Theme') === Theme.DARK) {
     switchInput.checked = true;
     changeValueInput();
+    return;
   }
 }
